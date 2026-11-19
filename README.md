@@ -6,28 +6,38 @@ See the [Project 02 instructions](https://data385.github.io/project/proj02_whole
 
 ## 1. Problem statement
 
-_Who has the problem, what decision or need it involves, why it matters, and what you expect to find._
+Preventable death is always a problem no matter where you go, that is no different in California. I want to see what causes are highest and where so I can figure out where best I can fund or start programs that will help counteract those preventable deaths. More importantly, I wanted to see if population had anything to do with it.
 
 
 ## 2. Research question
 
-_A clear association between a response and at least one predictor variable._
+"Does the population of a county affect the leading cause of death present within that county?"
 
 
 ## 3. Data acquisition
 
-_In 1-2 sentences, describe the data you intend to collect and how you will get it._
+I'll be collecting my death data from the california health and human services open data portal, in csv format. If need be, I can collect census data to verify populations and perform a join by county name or something similar.
 
 
 ### a. Confirm viability
 
 _Scraping: summarize the "Before You Scrape" checklist. Downloading: citation, link to the documentation, and how the data were originally collected. Collecting it yourself: how you are collecting it and where you are storing it._
 
+I'll be collecting my data through california government agency websites:
+https://data.chhs.ca.gov/dataset/58619b69-b3cb-41a7-8bfc-fc3a524a9dd4/resource/2e546f88-bba8-4d77-846a-7fb77846cac6/download/2026-10_deaths_provisional_county_month_sup.csv
+
+https://data.ca.gov/@california-health-and-human-services-agency/calhhs-data-de-identification-guidelines-reference-dataset/r/d3e02ccd-9081-453d-85dc-7f70df4907bd
+
 
 ### b. Variables of interest
 
 _If you do not have the data yet, list the variables you plan to collect and the exact question text. Include 1) the variable name, 2) data type 3) description. Use bullet points._
 
+from the death dataset:
+county, cause of death, perhaps death date should I want to see if certain months have different results.
+
+from census data:
+county, population
 
 ## 4. Data example
 
