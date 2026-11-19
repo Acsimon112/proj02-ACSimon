@@ -34,29 +34,39 @@ https://data.ca.gov/@california-health-and-human-services-agency/calhhs-data-de-
 _If you do not have the data yet, list the variables you plan to collect and the exact question text. Include 1) the variable name, 2) data type 3) description. Use bullet points._
 
 from the death dataset:
-county, cause of death, perhaps death date should I want to see if certain months have different results.
+- county: categorical variable. String. the county the death was recorded in.
+- cause: categorical variable. String. cause of death in a 3 letter code
+- cause_desc: Same as cause, except it states a full description of the cause of death. More readable.
+- cause_density: Numerical. I'll have to make this one myself to pull the density of the causes of death for each county.
 
 from census data:
-county, population
+- county: name of the county. Useful as a join operator.
+- population: numeric. Will be used to gauge the population of a county.
 
 ## 4. Data example
 
 _Scraping: a URL and an annotated screenshot. Downloading: a link to your rendered `data_management.pdf` with `glimpse()`. Collecting: a screenshot of one example row._
+
+PDF in github repo.
 
 
 ## 5. EDA
 
 _The techniques and functions you plan to use to import, wrangle, visualize, and explore the data, and why each is needed._
 
+I'll import them from a data folder, which should be self explanitory. Using both datasets i'll probably perform a join to match leading causes of death to populations so that I can visualize it. I'll most likely be performing a visualization through a scatterplot based on a single cause of death perhaps. I'll need to take the density of these cases, and likely do some further wrangling. Perhaps another variable with death density and population to form a density per capita type observation. That might help ease problems with large population differences.
+
 
 ## 6. Modeling
 
 _The models you plan to use, your response and predictor variables, and why the models fit your research question._
-
+It's very possible I can take some leading causes of death in each county and then run a linear regression model to look for correlation between population and cause of death. This will fit my research question as I aim to spot any differences in population density and cause of death.
 
 ## 7. Communicate
 
 _How you plan to present your results (website, poster, or short slide presentation)._
+
+I'll be putting all of this on a quarto website most likely.
 
 
 ## 8. LLM disclaimer
